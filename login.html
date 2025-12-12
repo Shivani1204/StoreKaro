@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>StoreKaro – User Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-bg login-body">
+ 
+  <div class="login-wrapper">
+    <!-- Left side -->
+    <div class="left-panel">
+      <div class="brand">
+        <a href="index.html" class="brand-link" aria-label="StoreKaro home">
+            <img src="assets/logo.png" alt="StoreKaro" class="brand-image" />
+        </a>
+        
+      </div>
+ 
+      <h2 class="left-heading">Smarter Cloud. Simple Login.</h2>
+      <p class="left-subtext">
+        Access your cloud intelligence dashboard, see live savings, and manage
+        uptime and migrations from a single control panel.
+      </p>
+ 
+      <p class="left-footer">
+        By logging in, you agree to our Terms of Service and Privacy Policy.  
+        StoreKaro © 2025 – All rights reserved.
+      </p>
+    </div>
+ 
+    <!-- Right side (User login only) -->
+    <div class="right-panel">
+      <h1 class="form-title">Welcome</h1>
+      <p class="form-subtitle">User login to continue to your dashboard.</p>
+ 
+      <form id="user-login-form">
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input class="form-input" type="email" id="email"
+                 placeholder="you@example.com" required />
+        </div>
+ 
+        <div class="form-group">
+          <label class="form-label" for="password">Password</label>
+          <input class="form-input" type="password" id="password"
+                 placeholder="Enter your password" required />
+        </div>
+ 
+        <div class="forgot-link">
+          <a href="#">Forgot your password?</a>
+        </div>
+ 
+        <button type="submit" class="btn-primary">Log In</button>
+ 
+        <p class="signup-text">
+          Don’t have an account?
+          <a href="signup.html">Sign up</a>
+        </p>
+ 
+        <p class="signup-text" style="font-size:11px;margin-top:10px;color:#9ca3af;">
+          
+        </p>
+      </form>
+    </div>
+  </div>
+ 
+  <script src="scripts.js"></script>
+</body>
+</html>
+ 

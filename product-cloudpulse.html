@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CloudPulse – Cloud Health & Waste Detection | StoreKaro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-bg">
+ 
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <div class="nav-left">
+        <div class="brand-logo">S</div>
+        <span class="brand-text">StoreKaro</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html#products">Products</a>
+        <a href="index.html#how-it-works">How it works</a>
+        <a href="index.html#why-us">Why StoreKaro</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="login.html" class="btn-outline">Login</a>
+        <a href="index.html#demo" class="btn-primary-sm">Request Demo</a>
+      </div>
+    </div>
+  </header>
+ 
+  <!-- PRODUCT HERO -->
+  <section class="product-hero">
+    <div>
+      <p class="product-hero-tagline">Visibility • Savings • Simplicity</p>
+      <h1 class="product-hero-title">CloudPulse – Cloud Health & Waste Detection</h1>
+      <p class="product-hero-text">
+        CloudPulse is your cloud’s full body checkup. It finds idle servers, zombie
+        resources, oversizing, risky single points of failure and wrong storage tiers,
+        then turns all of that into a clean, business-friendly action plan.
+      </p>
+ 
+      <div class="product-hero-badges">
+        <span class="chip">Detects 20–40% average waste</span>
+        <span class="chip">Health score for management</span>
+        <span class="chip">Runs safely via read-only access</span>
+      </div>
+    </div>
+ 
+    <aside class="product-hero-card">
+      <h3>Sample CloudPulse Snapshot</h3>
+      <ul class="product-hero-metrics">
+        <li><span>Overall Health Score</span><strong>78 / 100</strong></li>
+        <li><span>Potential monthly savings</span><strong>₹2,40,000</strong></li>
+        <li><span>Idle resources detected</span><strong>42</strong></li>
+      </ul>
+      <p>
+        This view is what CTOs and CFOs love – simple numbers that explain where
+        spend goes and how to fix it without reading AWS bills line by line.
+      </p>
+    </aside>
+  </section>
+ 
+  <!-- TABS -->
+  <section class="tabs" data-tabs>
+    <div class="tab-nav">
+      <button class="tab-button" data-tab-button data-target="overview">Overview</button>
+      <button class="tab-button" data-tab-button data-target="finds">What CloudPulse Finds</button>
+      <button class="tab-button" data-tab-button data-target="reporting">Reports</button>
+      <button class="tab-button" data-tab-button data-target="pricing">Pricing</button>
+      <button class="tab-button" data-tab-button data-target="faq">FAQ</button>
+    </div>
+ 
+    <div class="tab-panels">
+      <!-- Overview -->
+      <div class="tab-panel" data-tab-panel="overview">
+        <p>
+          CloudPulse runs a non-intrusive scan of your cloud accounts and converts
+          millions of metrics into a single, human-readable health score. It highlights
+          both cost and risk – so you know what to fix first.
+        </p>
+        <ul style="margin-top:10px;">
+          <li>Cost, performance and reliability are all included in the score.</li>
+          <li>Perfect for board decks, investor updates and internal reviews.</li>
+          <li>Links directly into IBSO, PARADOX and CloudSync for one-click action.</li>
+        </ul>
+      </div>
+ 
+      <!-- What it finds -->
+      <div class="tab-panel" data-tab-panel="finds">
+        <ul>
+          <li><strong>Idle / zombie resources:</strong> Instances, volumes, load
+              balancers and IPs that are not doing useful work.</li>
+          <li><strong>Oversizing:</strong> VMs or DBs using < 20–30% utilisation.</li>
+          <li><strong>Wrong storage tiers:</strong> Cold data paid for at hot prices.</li>
+          <li><strong>Single points of failure:</strong> Lack of redundancy or backup.</li>
+          <li><strong>Compliance drift:</strong> Public buckets, open ports and more
+              (high-level hygiene issues).</li>
+        </ul>
+      </div>
+ 
+      <!-- Reporting -->
+      <div class="tab-panel" data-tab-panel="reporting">
+        <p>
+          Every CloudPulse run generates a clean “action plan”:
+        </p>
+        <ul style="margin-top:8px;">
+          <li>Top 10 savings opportunities with estimated amounts in ₹.</li>
+          <li>Top 10 reliability risks with suggested fixes.</li>
+          <li>Health trend over time, so you see improvement after changes.</li>
+          <li>Downloadable PDF for finance / leadership teams.</li>
+        </ul>
+        <p style="margin-top:10px;">
+          You can schedule scans weekly or monthly to keep the cloud continuously
+          fit and monitored.
+        </p>
+      </div>
+ 
+      <!-- Pricing -->
+      <div class="tab-panel" data-tab-panel="pricing">
+        <p>
+          CloudPulse is usually bundled with IBSO, but can also be purchased
+          standalone for teams who want deep visibility first.
+        </p>
+        <ul style="margin-top:8px;">
+          <li><strong>Scan-based:</strong> Pay per scan for periodic audits.</li>
+          <li><strong>Subscription:</strong> Unlimited scans for continuous monitoring.</li>
+          <li><strong>Bundle:</strong> Lowest TCO when combined with IBSO + PARADOX.</li>
+        </ul>
+      </div>
+ 
+      <!-- FAQ -->
+      <div class="tab-panel" data-tab-panel="faq">
+        <p><strong>Do you need write access?</strong><br />
+          By default, no. CloudPulse can run purely in read-only mode to show
+          issues and savings opportunities. You can then choose to let StoreKaro
+          automate some fixes.</p>
+ 
+        <p style="margin-top:8px;"><strong>How long does a scan take?</strong><br />
+          Most customers see their first CloudPulse report within a few hours of
+          connecting accounts, depending on cloud size.</p>
+      </div>
+    </div>
+  </section>
+ 
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© 2025 StoreKaro. All rights reserved.</span>
+      <span class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </span>
+    </div>
+  </footer>
+ 
+  <script src="scripts.js"></script>
+</body>
+</html>
+ 

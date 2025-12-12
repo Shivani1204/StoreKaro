@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>StoreKaro – User Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-bg dashboard-body">
+ 
+  <div class="dashboard-container">
+    <div class="dashboard-layout">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        
+        <div class="sidebar-header">
+          <img src="assets/logo.png" alt="StoreKaro" class="sidebar-logo" />
+            <div>
+                <div class="sidebar-title">StoreKaro</div>
+                <div style="font-size:11px;color:#9ca3af;">Customer Console</div>
+            </div>
+        </div>
+ 
+        <div>
+          <div class="sidebar-section-title">My Cloud</div>
+          <ul class="sidebar-nav">
+            <li><a href="#" data-user-nav data-target="overview" class="active">Overview</a></li>
+            <li><a href="#" data-user-nav data-target="cloudpulse">CloudPulse</a></li>
+            <li><a href="#" data-user-nav data-target="paradox">PARADOX Alerts</a></li>
+            <li><a href="#" data-user-nav data-target="cloudsync">CloudSync Migrations</a></li>
+            <li><a href="#" data-user-nav data-target="yieldmint">YieldMint Earnings</a></li>
+          </ul>
+        </div>
+ 
+        <div class="sidebar-footer">
+          <div>Logged in as: <strong>Demo User</strong></div>
+          <div><a href="login.html" style="color:#bfdbfe;text-decoration:none;">Log out</a></div>
+        </div>
+      </aside>
+ 
+      <!-- MAIN -->
+      <main class="dashboard-main">
+        <div class="dashboard-header">
+          <div class="dashboard-header-text">
+            <h1>Cloud Overview</h1>
+            <p>Live health, savings and reliability status for your cloud workloads.</p>
+          </div>
+          <div class="dashboard-user-pill">
+            <div class="dashboard-user-avatar">D</div>
+            <span>Demo User • FinPay</span>
+          </div>
+        </div>
+ 
+        <!-- ========== VIEWS ========== -->
+ 
+        <!-- OVERVIEW -->
+        <section class="dashboard-view" data-user-view="overview">
+          <section class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-label">Cloud Health Score</div>
+              <div class="stat-value">84 / 100</div>
+              <div class="stat-trend up">Improved +6 this week</div>
+            </div>
+ 
+            <div class="stat-card">
+              <div class="stat-label">Monthly Cloud Spend</div>
+              <div class="stat-value">₹12,00,000</div>
+              <div class="stat-trend down">Optimised -₹3,20,000</div>
+            </div>
+ 
+            <div class="stat-card">
+              <div class="stat-label">Predicted Risk</div>
+              <div class="stat-value">Low</div>
+              <div class="stat-trend up">PARADOX monitoring 2 regions</div>
+            </div>
+ 
+            <div class="stat-card">
+              <div class="stat-label">YieldMint Credits</div>
+              <div class="stat-value">₹48,000</div>
+              <div class="stat-trend up">From idle capacity last month</div>
+            </div>
+          </section>
+ 
+          <section class="panel">
+            <div class="panel-header">
+              <h2>High-level Summary</h2>
+              <span>Snapshot from all StoreKaro engines</span>
+            </div>
+            <p style="font-size:13px;color:#4b5563;">
+              IBSO is actively optimising your storage layout, CloudPulse has identified new
+              savings opportunities, PARADOX is watching your primary regions, and CloudSync
+              has a tested failover path ready. YieldMint is offsetting part of your bill
+              using idle capacity.
+            </p>
+          </section>
+        </section>
+ 
+        <!-- CLOUDPULSE VIEW -->
+        <section class="dashboard-view" data-user-view="cloudpulse" style="display:none;">
+          <section class="panel">
+            <div class="panel-header">
+              <h2>CloudPulse Recommendations</h2>
+              <span>Next best actions</span>
+            </div>
+ 
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Priority</th>
+                  <th>Recommendation</th>
+                  <th>Service</th>
+                  <th>Estimated Savings</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>High</td>
+                  <td>Right-size 6 over-provisioned database instances.</td>
+                  <td>RDS / SQL</td>
+                  <td>₹80,000 / month</td>
+                  <td><span class="badge badge-yellow">Reviewing</span></td>
+                </tr>
+                <tr>
+                  <td>Medium</td>
+                  <td>Move 2 TB of old logs to archival tier.</td>
+                  <td>Object Storage</td>
+                  <td>₹35,000 / month</td>
+                  <td><span class="badge badge-green">Scheduled</span></td>
+                </tr>
+                <tr>
+                  <td>Medium</td>
+                  <td>Remove 3 unused load balancers from test environment.</td>
+                  <td>Network</td>
+                  <td>₹12,000 / month</td>
+                  <td><span class="badge badge-green">Completed</span></td>
+                </tr>
+                <tr>
+                  <td>Low</td>
+                  <td>Consolidate snapshots older than 1 year.</td>
+                  <td>Backups</td>
+                  <td>₹9,000 / month</td>
+                  <td><span class="badge badge-yellow">Pending</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </section>
+ 
+        <!-- PARADOX VIEW -->
+        <section class="dashboard-view" data-user-view="paradox" style="display:none;">
+          <section class="panel">
+            <div class="panel-header">
+              <h2>PARADOX Alerts & Risk</h2>
+              <span>Last 7 days</span>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Type</th>
+                  <th>Description</th>
+                  <th>Action Taken</th>
+                  <th>Impact</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Today • 09:12</td>
+                  <td>Prediction</td>
+                  <td>Possible latency spike in AWS Mumbai.</td>
+                  <td>Traffic shifted 30% to backup region.</td>
+                  <td><span class="badge badge-green">No downtime</span></td>
+                </tr>
+                <tr>
+                  <td>Yesterday • 18:45</td>
+                  <td>Drill</td>
+                  <td>Failover drill triggered to AWS Hyderabad.</td>
+                  <td>Automatic execution via CloudSync.</td>
+                  <td><span class="badge badge-green">Test passed</span></td>
+                </tr>
+                <tr>
+                  <td>2 days ago • 11:20</td>
+                  <td>Warning</td>
+                  <td>Network degradation risk in primary region.</td>
+                  <td>Alert acknowledged, monitored closely.</td>
+                  <td><span class="badge badge-yellow">Watchlist</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </section>
+ 
+        <!-- CLOUDSYNC VIEW -->
+        <section class="dashboard-view" data-user-view="cloudsync" style="display:none;">
+          <section class="panel">
+            <div class="panel-header">
+              <h2>CloudSync Migrations & Drills</h2>
+              <span>Recent activity</span>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>When</th>
+                  <th>Type</th>
+                  <th>Source → Target</th>
+                  <th>Status</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Today • 08:45</td>
+                  <td>Failover drill</td>
+                  <td>AWS Mumbai → AWS Hyderabad</td>
+                  <td><span class="badge badge-green">Success</span></td>
+                  <td>Zero downtime, 4 min traffic shift.</td>
+                </tr>
+                <tr>
+                  <td>Last week</td>
+                  <td>Migration</td>
+                  <td>AWS ap-south-1 → ap-south-2</td>
+                  <td><span class="badge badge-green">Completed</span></td>
+                  <td>New region live, old env in standby.</td>
+                </tr>
+                <tr>
+                  <td>Last month</td>
+                  <td>DR test</td>
+                  <td>Primary → GCP backup</td>
+                  <td><span class="badge badge-green">Passed</span></td>
+                  <td>RPO & RTO met targets.</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </section>
+ 
+        <!-- YIELDMINT VIEW -->
+        <section class="dashboard-view" data-user-view="yieldmint" style="display:none;">
+          <section class="panel">
+            <div class="panel-header">
+              <h2>YieldMint Earnings</h2>
+              <span>Based on idle capacity</span>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Month</th>
+                  <th>Idle Capacity Used</th>
+                  <th>Credits Earned</th>
+                  <th>Effective Cost Offset</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Dec 2024</td>
+                  <td>22% of archival environment</td>
+                  <td>₹48,000</td>
+                  <td><span class="badge badge-green">Good</span></td>
+                </tr>
+                <tr>
+                  <td>Nov 2024</td>
+                  <td>18% of archival environment</td>
+                  <td>₹39,000</td>
+                  <td><span class="badge badge-green">Good</span></td>
+                </tr>
+                <tr>
+                  <td>Oct 2024</td>
+                  <td>10% of archival environment</td>
+                  <td>₹22,000</td>
+                  <td><span class="badge badge-yellow">Can improve</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </section>
+      </main>
+    </div>
+  </div>
+ 
+  <script src="scripts.js"></script>
+</body>
+</html>
+ 

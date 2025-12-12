@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>StoreKaro – Admin Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-bg dashboard-body">
+ 
+  <div class="dashboard-container">
+    <div class="dashboard-layout">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <img src="assets/logo.png" alt="StoreKaro" class="sidebar-logo" />
+          <div>
+            <div class="sidebar-title">StoreKaro Admin</div>
+            <div style="font-size:11px;color:#9ca3af;">Cloud Intelligence Control</div>
+          </div>
+        </div>
+ 
+        <div>
+          <div class="sidebar-section-title">Main</div>
+          <ul class="sidebar-nav">
+            <li><a href="#" data-admin-nav data-target="overview" class="active">Overview</a></li>
+            <li><a href="#" data-admin-nav data-target="customers">Customers</a></li>
+            <li><a href="#" data-admin-nav data-target="cloud-accounts">Cloud Accounts</a></li>
+            <li><a href="#" data-admin-nav data-target="alerts">Alerts</a></li>
+          </ul>
+        </div>
+ 
+        <div>
+          <div class="sidebar-section-title">System</div>
+          <ul class="sidebar-nav">
+            <li><a href="#" data-admin-nav data-target="billing">Billing</a></li>
+            <li><a href="#" data-admin-nav data-target="settings">Settings</a></li>
+          </ul>
+        </div>
+ 
+        <div class="sidebar-footer">
+          <div>Logged in as: <strong>Admin</strong></div>
+          <div><a href="login.html" style="color:#bfdbfe;text-decoration:none;">Log out</a></div>
+        </div>
+      </aside>
+ 
+      <!-- MAIN -->
+      <main class="dashboard-main">
+        <div class="dashboard-header">
+          <div class="dashboard-header-text">
+            <h1>Admin Console</h1>
+            <p>Manage customers, monitor global health and control the StoreKaro platform.</p>
+          </div>
+          <div class="dashboard-user-pill">
+            <div class="dashboard-user-avatar">A</div>
+            <span>Admin • Global</span>
+          </div>
+        </div>
+ 
+        <!-- ========== VIEWS ========== -->
+ 
+        <!-- OVERVIEW VIEW -->
+        <section class="dashboard-view" data-admin-view="overview">
+          <section class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-label">Total Customers</div>
+              <div class="stat-value">30</div>
+              <div class="stat-trend up">+6 this quarter</div>
+            </div>
+ 
+            <div class="stat-card">
+              <div class="stat-label">Annual Recurring Revenue</div>
+              <div class="stat-value">₹10 Cr</div>
+              <div class="stat-trend up">+68% YoY</div>
+            </div>
+ 
+            <div class="stat-card">
+              <div class="stat-label">Cloud Spend Optimized</div>
+              <div class="stat-value">₹3.2 Cr</div>
+              <div class="stat-trend up">Avg 32% per customer</div>
+            </div>
+ 
+            <div class="stat-card">
+              <div class="stat-label">Active Critical Alerts</div>
+              <div class="stat-value">3</div>
+              <div class="stat-trend down">-4 vs last week</div>
+            </div>
+          </section>
+ 
+          <section class="panel">
+            <div class="panel-header">
+              <h2>Top Customers by Savings</h2>
+              <span>View by: last 30 days</span>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Customer</th>
+                  <th>Industry</th>
+                  <th>Monthly Cloud Spend</th>
+                  <th>Monthly Savings</th>
+                  <th>Health</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>FinPay Systems</td>
+                  <td>Fintech</td>
+                  <td>₹12,00,000</td>
+                  <td>₹3,40,000</td>
+                  <td><span class="badge badge-green">Healthy</span></td>
+                </tr>
+                <tr>
+                  <td>ShipGo Logistics</td>
+                  <td>Logistics</td>
+                  <td>₹8,50,000</td>
+                  <td>₹2,10,000</td>
+                  <td><span class="badge badge-green">Healthy</span></td>
+                </tr>
+                <tr>
+                  <td>CartHive Commerce</td>
+                  <td>E-Commerce</td>
+                  <td>₹6,20,000</td>
+                  <td>₹1,55,000</td>
+                  <td><span class="badge badge-yellow">Watch</span></td>
+                </tr>
+                <tr>
+                  <td>NovaSaaS Labs</td>
+                  <td>SaaS</td>
+                  <td>₹5,40,000</td>
+                  <td>₹1,20,000</td>
+                  <td><span class="badge badge-green">Healthy</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </section>
+ 
+        <!-- CUSTOMERS VIEW -->
+        <section class="dashboard-view" data-admin-view="customers" style="display:none;">
+          <section class="panel">
+            <div class="panel-header">
+              <h2>All Customers</h2>
+              <span>Manage StoreKaro tenants</span>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Customer</th>
+                  <th>Industry</th>
+                  <th>Plan</th>
+                  <th>MRR</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>FinPay Systems</td>
+                  <td>Fintech</td>
+                  <td>Enterprise</td>
+                  <td>₹3,20,000</td>
+                  <td><span class="badge badge-green">Active</span></td>
+                </tr>
+                <tr>
+                  <td>ShipGo Logistics</td>
+                  <td>Logistics</td>
+                  <td>Growth</td>
+                  <td>₹1,80,000</td>
+                  <td><span class="badge badge-green">Active</span></td>
+                </tr>
+                <tr>
+                  <td>CartHive Commerce</td>
+                  <td>E-Commerce</td>
+                  <td>Growth</td>
+                  <td>₹1,45,000</td>
+                  <td><span class="badge badge-yellow">Needs review</span></td>
+                </tr>
+                <tr>
+                  <td>DataMint Analytics</td>
+                  <td>Analytics</td>
+                  <td>Starter</td>
+                  <td>₹60,000</td>
+                  <td><span class="badge badge-green">Active</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </section>
+ 
+        <!-- CLOUD ACCOUNTS VIEW -->
+        <section class="dashboard-view" data-admin-view="cloud-accounts" style="display:none;">
+          <section class="panel">
+            <div class="panel-header">
+              <h2>Connected Cloud Accounts</h2>
+              <span>AWS / Azure / GCP per customer</span>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Customer</th>
+                  <th>AWS</th>
+                  <th>Azure</th>
+                  <th>GCP</th>
+                  <th>Last Sync</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>FinPay Systems</td>
+                  <td>✓ (prod, staging)</td>
+                  <td>–</td>
+                  <td>✓ (analytics)</td>
+                  <td>Today • 08:40</td>
+                </tr>
+                <tr>
+                  <td>ShipGo Logistics</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>–</td>
+                  <td>Today • 07:55</td>
+                </tr>
+                <tr>
+                  <td>CartHive Commerce</td>
+                  <td>✓</td>
+                  <td>–</td>
+                  <td>–</td>
+                  <td>Yesterday • 19:20</td>
+                </tr>
+                <tr>
+                  <td>DataMint Analytics</td>
+                  <td>–</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>Yesterday • 16:10</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </section>
+ 
+        <!-- ALERTS VIEW -->
+        <section class="dashboard-view" data-admin-view="alerts" style="display:none;">
+          <section class="panel">
+            <div class="panel-header">
+              <h2>Recent Platform Alerts</h2>
+              <span>Last 24 hours</span>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Type</th>
+                  <th>Customer</th>
+                  <th>Description</th>
+                  <th>Impact</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>09:12</td>
+                  <td>PARADOX</td>
+                  <td>FinPay Systems</td>
+                  <td>Predicted AWS Mumbai instability</td>
+                  <td><span class="badge badge-yellow">Preventive</span></td>
+                </tr>
+                <tr>
+                  <td>08:45</td>
+                  <td>CloudSync</td>
+                  <td>CartHive Commerce</td>
+                  <td>Migrated workload to backup region</td>
+                  <td><span class="badge badge-green">Zero downtime</span></td>
+                </tr>
+                <tr>
+                  <td>07:30</td>
+                  <td>CloudPulse</td>
+                  <td>ShipGo Logistics</td>
+                  <td>Scan completed, 24% waste found</td>
+                  <td><span class="badge badge-green">Actionable</span></td>
+                </tr>
+                <tr>
+                  <td>06:55</td>
+                  <td>Onboarding</td>
+                  <td>DataMint Analytics</td>
+                  <td>New customer connected accounts</td>
+                  <td><span class="badge badge-green">Activated</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </section>
+ 
+        <!-- BILLING VIEW -->
+        <section class="dashboard-view" data-admin-view="billing" style="display:none;">
+          <section class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-label">Monthly Recurring Revenue</div>
+              <div class="stat-value">₹83,00,000</div>
+              <div class="stat-trend up">+12% vs last month</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Average ARPU</div>
+              <div class="stat-value">₹2,75,000</div>
+              <div class="stat-trend up">+7% vs last quarter</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Overdue Invoices</div>
+              <div class="stat-value">₹4,60,000</div>
+              <div class="stat-trend down">-₹1,20,000 vs last month</div>
+            </div>
+          </section>
+          <section class="panel">
+            <div class="panel-header">
+              <h2>Recent Invoices</h2>
+              <span>Top 5</span>
+            </div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Invoice</th>
+                  <th>Customer</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                  <th>Due Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#INV-2041</td>
+                  <td>FinPay Systems</td>
+                  <td>₹3,20,000</td>
+                  <td><span class="badge badge-green">Paid</span></td>
+                  <td>10 Dec 2025</td>
+                </tr>
+                <tr>
+                  <td>#INV-2042</td>
+                  <td>ShipGo Logistics</td>
+                  <td>₹1,80,000</td>
+                  <td><span class="badge badge-yellow">Pending</span></td>
+                  <td>12 Dec 2025</td>
+                </tr>
+                <tr>
+                  <td>#INV-2043</td>
+                  <td>CartHive Commerce</td>
+                  <td>₹1,45,000</td>
+                  <td><span class="badge badge-red">Overdue</span></td>
+                  <td>01 Dec 2025</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </section>
+ 
+        <!-- SETTINGS VIEW -->
+        <section class="dashboard-view" data-admin-view="settings" style="display:none;">
+          <section class="panel">
+            <div class="panel-header">
+              <h2>Platform Settings</h2>
+              <span>Global toggles for StoreKaro engine</span>
+            </div>
+ 
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Enable automatic IBSO optimization</td>
+                  <td>
+                    <input type="checkbox" checked />
+                  </td>
+                  <td style="font-size:11px;color:#6b7280;">
+                    When on, IBSO can apply changes after simulation.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Allow PARADOX to trigger CloudSync failover</td>
+                  <td>
+                    <input type="checkbox" checked />
+                  </td>
+                  <td style="font-size:11px;color:#6b7280;">
+                    Recommended for critical workloads only.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Enable YieldMint for all eligible customers</td>
+                  <td>
+                    <input type="checkbox" />
+                  </td>
+                  <td style="font-size:11px;color:#6b7280;">
+                    If off, customers must opt in per-account.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Send weekly CloudPulse reports to admins</td>
+                  <td>
+                    <input type="checkbox" checked />
+                  </td>
+                  <td style="font-size:11px;color:#6b7280;">
+                    Summary of health, waste, and risk.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </section>
+ 
+      </main>
+    </div>
+  </div>
+ 
+  <script src="scripts.js"></script>
+</body>
+</html>
+ 

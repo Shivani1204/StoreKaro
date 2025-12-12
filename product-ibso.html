@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IBSO – Intent-Based Storage Orchestration | StoreKaro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-bg">
+ 
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <div class="nav-left">
+        <div class="brand-logo">S</div>
+        <span class="brand-text">StoreKaro</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html#products">Products</a>
+        <a href="index.html#how-it-works">How it works</a>
+        <a href="index.html#why-us">Why StoreKaro</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="login.html" class="btn-outline">Login</a>
+        <a href="index.html#demo" class="btn-primary-sm">Request Demo</a>
+      </div>
+    </div>
+  </header>
+ 
+  <!-- PRODUCT HERO -->
+  <section class="product-hero">
+    <div>
+      <p class="product-hero-tagline">Core Engine • Multi-cloud • AI-driven</p>
+      <h1 class="product-hero-title">IBSO – Intent-Based Storage Orchestration</h1>
+      <p class="product-hero-text">
+        IBSO is the brain of StoreKaro. Instead of choosing S3 classes, regions, IOPS
+        and lifecycle rules, you simply describe your intent – compliance, cost or
+        performance – and IBSO automatically designs and maintains the right storage layout
+        across AWS, Azure and GCP.
+      </p>
+ 
+      <div class="product-hero-badges">
+        <span class="chip">Up to 30–40% cost reduction</span>
+        <span class="chip">Zero manual tier decisions</span>
+        <span class="chip">Works on existing cloud accounts</span>
+      </div>
+    </div>
+ 
+    <aside class="product-hero-card">
+      <h3>IBSO in Action (Example)</h3>
+      <ul class="product-hero-metrics">
+        <li><span>Data under IBSO control</span><strong>220 TB</strong></li>
+        <li><span>Avg cost reduction</span><strong>32%</strong></li>
+        <li><span>Manual tickets avoided</span><strong>180+/month</strong></li>
+      </ul>
+      <p>
+        A fintech simply told IBSO: “Store for 7 years, instant recovery for 90 days,
+        then low cost.” IBSO mapped this into multi-tier storage policies and keeps
+        auto-optimising as access patterns change.
+      </p>
+    </aside>
+  </section>
+ 
+  <!-- TABS -->
+  <section class="tabs" data-tabs>
+    <div class="tab-nav">
+      <button class="tab-button" data-tab-button data-target="overview">Overview</button>
+      <button class="tab-button" data-tab-button data-target="capabilities">Capabilities</button>
+      <button class="tab-button" data-tab-button data-target="example">Real Use Case</button>
+      <button class="tab-button" data-tab-button data-target="pricing">Pricing</button>
+      <button class="tab-button" data-tab-button data-target="faq">FAQ</button>
+    </div>
+ 
+    <div class="tab-panels">
+      <!-- Overview -->
+      <div class="tab-panel" data-tab-panel="overview">
+        <p>
+          IBSO converts simple business language into granular storage decisions.
+          Instead of forcing DevOps teams to decide between dozens of tiers and
+          lifecycle rules, IBSO keeps asking one question:
+        </p>
+        <p style="margin-top:6px;"><strong>“What outcome do you want?”</strong></p>
+        <ul style="margin-top:10px;">
+          <li>Intent → “Store for 7 years, cheap, but recoverable in seconds.”</li>
+          <li>IBSO → Chooses correct tiers, regions and policies across clouds.</li>
+          <li>Continuously re-evaluates as your access patterns evolve.</li>
+        </ul>
+      </div>
+ 
+      <!-- Capabilities -->
+      <div class="tab-panel" data-tab-panel="capabilities">
+        <ul>
+          <li><strong>Intent templates:</strong> Cost-first, performance-first,
+              compliance-first, backup-only.</li>
+          <li><strong>Dynamic tiering:</strong> Moves data between hot, warm and
+              cold storage automatically.</li>
+          <li><strong>Multi-cloud aware:</strong> Chooses optimal mix of AWS/Azure/GCP
+              for each dataset.</li>
+          <li><strong>Simulation mode:</strong> See “before vs after” cost and performance
+              before applying.</li>
+          <li><strong>Full audit trail:</strong> Every change is logged with reason +
+              expected impact.</li>
+        </ul>
+      </div>
+ 
+      <!-- Example -->
+      <div class="tab-panel" data-tab-panel="example">
+        <p>
+          A SaaS analytics company was storing all logs in expensive hot storage,
+          just in case they needed fast access.
+        </p>
+        <ul style="margin-top:10px;">
+          <li>IBSO identified that 90% of log queries only touched the last 14 days.</li>
+          <li>It kept 14 days in high-performance hot storage.</li>
+          <li>From day 15–180, logs moved to warm storage.</li>
+          <li>After 6 months, logs were archived cheaply but still searchable.</li>
+        </ul>
+        <p style="margin-top:10px;">
+          Result: <strong>38% cost reduction</strong> with zero change in developer behaviour.
+        </p>
+      </div>
+ 
+      <!-- Pricing -->
+      <div class="tab-panel" data-tab-panel="pricing">
+        <p>
+          IBSO is offered as a SaaS subscription based on the total data volume
+          under orchestration:
+        </p>
+        <ul style="margin-top:8px;">
+          <li><strong>Starter:</strong> Up to 50 TB – ideal for growing teams.</li>
+          <li><strong>Growth:</strong> 50–250 TB – multi-product environments.</li>
+          <li><strong>Enterprise:</strong> 250 TB+ – custom SLAs and governance.</li>
+        </ul>
+        <p style="margin-top:10px;">
+          Exact pricing can be customised based on region and compliance needs.
+          Our goal is simple: <strong>IBSO always pays for itself via savings.</strong>
+        </p>
+      </div>
+ 
+      <!-- FAQ -->
+      <div class="tab-panel" data-tab-panel="faq">
+        <p><strong>Do you move my data outside my accounts?</strong><br />
+          No. All storage changes happen inside your existing AWS/Azure/GCP accounts.
+        </p>
+        <p style="margin-top:8px;"><strong>Can IBSO break my workloads?</strong><br />
+          Policies are simulated first. You decide whether to auto-apply or
+          approve manually. We start safely and ramp up automation at your pace.
+        </p>
+        <p style="margin-top:8px;"><strong>Does IBSO require agents?</strong><br />
+          No agents. Everything works via secure cloud APIs.</p>
+      </div>
+    </div>
+  </section>
+ 
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© 2025 StoreKaro. All rights reserved.</span>
+      <span class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </span>
+    </div>
+  </footer>
+ 
+  <script src="scripts.js"></script>
+</body>
+</html>
+ 

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PARADOX – Predictive Outage Engine | StoreKaro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-bg">
+ 
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <div class="nav-left">
+        <div class="brand-logo">S</div>
+        <span class="brand-text">StoreKaro</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html#products">Products</a>
+        <a href="index.html#how-it-works">How it works</a>
+        <a href="index.html#why-us">Why StoreKaro</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="login.html" class="btn-outline">Login</a>
+        <a href="index.html#demo" class="btn-primary-sm">Request Demo</a>
+      </div>
+    </div>
+  </header>
+ 
+  <!-- HERO -->
+  <section class="product-hero">
+    <div>
+      <p class="product-hero-tagline">Reliability • Early Warning • Multi-cloud</p>
+      <h1 class="product-hero-title">PARADOX – Predictive Outage Engine</h1>
+      <p class="product-hero-text">
+        PARADOX continuously watches 30+ live cloud signals to predict regional
+        instability before it hits your users. Instead of being surprised by cloud
+        incidents, you get early warnings and an action plan.
+      </p>
+ 
+      <div class="product-hero-badges">
+        <span class="chip">30–120 minutes early warning</span>
+        <span class="chip">Region & service level visibility</span>
+        <span class="chip">Pairs with CloudSync for failover</span>
+      </div>
+    </div>
+ 
+    <aside class="product-hero-card">
+      <h3>PARADOX Snapshot</h3>
+      <ul class="product-hero-metrics">
+        <li><span>Regions monitored</span><strong>14</strong></li>
+        <li><span>Incidents predicted this quarter</span><strong>32</strong></li>
+        <li><span>Unplanned downtime avoided</span><strong>27 hours</strong></li>
+      </ul>
+      <p>
+        PARADOX doesn’t wait for a cloud provider’s status page. It sees instability
+        in your traffic and metrics and warns you before it becomes a full outage.
+      </p>
+    </aside>
+  </section>
+ 
+  <!-- TABS -->
+  <section class="tabs" data-tabs>
+    <div class="tab-nav">
+      <button class="tab-button" data-tab-button data-target="overview">Overview</button>
+      <button class="tab-button" data-tab-button data-target="signals">Signals & Detection</button>
+      <button class="tab-button" data-tab-button data-target="usecases">Use Cases</button>
+      <button class="tab-button" data-tab-button data-target="pricing">Pricing</button>
+      <button class="tab-button" data-tab-button data-target="faq">FAQ</button>
+    </div>
+ 
+    <div class="tab-panels">
+      <!-- Overview -->
+      <div class="tab-panel" data-tab-panel="overview">
+        <p>
+          PARADOX is like a weather forecast for your cloud regions. It doesn’t replace
+          your monitoring tools – it sits above them, learning patterns that usually
+          appear before major incidents and warning you early.
+        </p>
+        <ul style="margin-top:10px;">
+          <li>Looks at metrics across apps, infra and network layers.</li>
+          <li>Matches them against historical incident patterns.</li>
+          <li>Raises predictive alerts with a confidence level and impact radius.</li>
+        </ul>
+      </div>
+ 
+      <!-- Signals -->
+      <div class="tab-panel" data-tab-panel="signals">
+        <p>Some of the signals PARADOX observes:</p>
+        <ul style="margin-top:8px;">
+          <li>Sudden growth in HTTP 5xx/429 errors.</li>
+          <li>Unusual latency spikes within a region or AZ.</li>
+          <li>Increased retry behaviour from SDKs and clients.</li>
+          <li>VM / container launch failures or timeouts.</li>
+          <li>Cross-region traffic imbalance patterns.</li>
+        </ul>
+        <p style="margin-top:10px;">
+          When enough of these align with previous outage patterns, PARADOX marks a
+          region or service as “at risk” and suggests next steps.
+        </p>
+      </div>
+ 
+      <!-- Use Cases -->
+      <div class="tab-panel" data-tab-panel="usecases">
+        <ul>
+          <li><strong>Fintech & payments:</strong> Route users to backup regions
+              before latency kills transaction success rates.</li>
+          <li><strong>E-commerce:</strong> Avoid checkout failures during peak
+              sale events by pre-emptively scaling or failing over.</li>
+          <li><strong>SaaS:</strong> Transparently protect SLAs by acting
+              before status pages change colour.</li>
+        </ul>
+        <p style="margin-top:10px;">
+          In combination with CloudSync, PARADOX can even trigger automated
+          failover while still giving you full control and visibility.
+        </p>
+      </div>
+ 
+      <!-- Pricing -->
+      <div class="tab-panel" data-tab-panel="pricing">
+        <p>PARADOX pricing is based on:</p>
+        <ul style="margin-top:8px;">
+          <li>Number of regions and cloud accounts monitored.</li>
+          <li>Frequency of checks (standard vs high-frequency for critical workloads).</li>
+          <li>Whether automated failover via CloudSync is enabled.</li>
+        </ul>
+        <p style="margin-top:10px;">
+          For most customers, the value is easy to quantify: <strong>one avoided
+          outage pays for PARADOX many times over.</strong>
+        </p>
+      </div>
+ 
+      <!-- FAQ -->
+      <div class="tab-panel" data-tab-panel="faq">
+        <p><strong>Will PARADOX generate false alarms?</strong><br />
+          We’d rather be slightly early than late. You can configure sensitivity
+          levels and which alerts should auto-trigger CloudSync.</p>
+ 
+        <p style="margin-top:8px;"><strong>Does it replace our existing monitoring?</strong><br />
+          No – it uses them. PARADOX ingests metrics and logs from your
+          existing stack and looks for predictive patterns.</p>
+      </div>
+    </div>
+  </section>
+ 
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© 2025 StoreKaro. All rights reserved.</span>
+      <span class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </span>
+    </div>
+  </footer>
+ 
+  <script src="scripts.js"></script>
+</body>
+</html>
+ 

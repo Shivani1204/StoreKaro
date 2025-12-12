@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CloudSync – Zero-Downtime Migration & Failover | StoreKaro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-bg">
+ 
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <div class="nav-left">
+        <div class="brand-logo">S</div>
+        <span class="brand-text">StoreKaro</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html#products">Products</a>
+        <a href="index.html#how-it-works">How it works</a>
+        <a href="index.html#why-us">Why StoreKaro</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="login.html" class="btn-outline">Login</a>
+        <a href="index.html#demo" class="btn-primary-sm">Request Demo</a>
+      </div>
+    </div>
+  </header>
+ 
+  <!-- HERO -->
+  <section class="product-hero">
+    <div>
+      <p class="product-hero-tagline">Migration • Multi-cloud • No Downtime</p>
+      <h1 class="product-hero-title">CloudSync – Zero-Downtime Migration & Failover</h1>
+      <p class="product-hero-text">
+        CloudSync lets you move workloads across regions and clouds without
+        going offline. It quietly builds a live mirror of your environment and
+        handles traffic shifts, failover and rollback safely.
+      </p>
+ 
+      <div class="product-hero-badges">
+        <span class="chip">Zero-downtime migrations</span>
+        <span class="chip">AWS ↔ Azure ↔ GCP</span>
+        <span class="chip">Automated drills & failover</span>
+      </div>
+    </div>
+ 
+    <aside class="product-hero-card">
+      <h3>Typical CloudSync Run</h3>
+      <ul class="product-hero-metrics">
+        <li><span>Apps migrated with downtime</span><strong>0</strong></li>
+        <li><span>Avg migration window</span><strong>2–4 hours</strong></li>
+        <li><span>Rollback time</span><strong>&lt; 5 minutes</strong></li>
+      </ul>
+      <p>
+        Instead of weekend cutovers and freeze periods, CloudSync turns
+        migrations into controlled, reversible changes you can perform in business hours.
+      </p>
+    </aside>
+  </section>
+ 
+  <!-- TABS -->
+  <section class="tabs" data-tabs>
+    <div class="tab-nav">
+      <button class="tab-button" data-tab-button data-target="overview">Overview</button>
+      <button class="tab-button" data-tab-button data-target="steps">How It Works</button>
+      <button class="tab-button" data-tab-button data-target="usecases">Use Cases</button>
+      <button class="tab-button" data-tab-button data-target="pricing">Pricing</button>
+      <button class="tab-button" data-tab-button data-target="faq">FAQ</button>
+    </div>
+ 
+    <div class="tab-panels">
+      <!-- Overview -->
+      <div class="tab-panel" data-tab-panel="overview">
+        <p>
+          CloudSync is built for teams who fear migrations because of the risk of
+          downtime. It orchestrates DB sync, storage sync and traffic switching
+          in a safe, observable way.
+        </p>
+        <ul style="margin-top:8px;">
+          <li>Supports region-to-region and cloud-to-cloud moves.</li>
+          <li>Integrates with PARADOX for automatic failover triggers.</li>
+          <li>Designed for repeatable drills and audits.</li>
+        </ul>
+      </div>
+ 
+      <!-- Steps -->
+      <div class="tab-panel" data-tab-panel="steps">
+        <ol style="margin-left:18px;">
+          <li><strong>Clone:</strong> CloudSync creates a mirrored environment in
+              the target region/cloud – same services, configs and security.</li>
+          <li><strong>Sync:</strong> Databases, files and configs are synced in
+              the background while users keep using the app normally.</li>
+          <li><strong>Shift:</strong> Traffic is gradually or instantly moved to
+              the new environment.</li>
+          <li><strong>Verify:</strong> Metrics and logs are checked for errors
+              or regressions.</li>
+          <li><strong>Lock or Rollback:</strong> Either lock in the new location
+              or roll back – both are one-click actions.</li>
+        </ol>
+      </div>
+ 
+      <!-- Use Cases -->
+      <div class="tab-panel" data-tab-panel="usecases">
+        <ul>
+          <li><strong>Leaving a single cloud:</strong> Move from AWS to a
+              multi-cloud setup without “big bang” downtime.</li>
+          <li><strong>Region expansion:</strong> Add closer regions for new
+              geographies and test traffic flows safely.</li>
+          <li><strong>Disaster recovery drills:</strong> Regularly test your DR
+              strategy with real workloads, not just documents.</li>
+        </ul>
+      </div>
+ 
+      <!-- Pricing -->
+      <div class="tab-panel" data-tab-panel="pricing">
+        <p>
+          CloudSync is billed based on:
+        </p>
+        <ul style="margin-top:8px;">
+          <li>Number of environments under sync.</li>
+          <li>Data volume replicated per month.</li>
+          <li>Level of automation (manual switch vs. auto-failover with PARADOX).</li>
+        </ul>
+        <p style="margin-top:10px;">
+          For large migrations, we also offer guided, one-time migration packages.
+        </p>
+      </div>
+ 
+      <!-- FAQ -->
+      <div class="tab-panel" data-tab-panel="faq">
+        <p><strong>Do we need to rewrite our app?</strong><br />
+          In most cases, no. CloudSync mirrors infrastructure, not code. If your
+          app already runs on your current cloud, we replicate that design.</p>
+ 
+        <p style="margin-top:8px;"><strong>What about data consistency?</strong><br />
+          For databases, we use native replication / binlog / CDC where possible.
+          Cutover is coordinated to minimise or avoid write conflicts.</p>
+      </div>
+    </div>
+  </section>
+ 
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© 2025 StoreKaro. All rights reserved.</span>
+      <span class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </span>
+    </div>
+  </footer>
+ 
+  <script src="scripts.js"></script>
+</body>
+</html>
+ 
